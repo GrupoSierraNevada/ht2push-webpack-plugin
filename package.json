@@ -1,5 +1,5 @@
 {
-  "name": "htmlpush-webpack-plugin",
+  "name": "ht2push-webpack-plugin",
   "version": "1.0.0",
   "description": "Generate .htaccess file for static html-webpack-plugin based compilations",
   "main": "index.js",
@@ -16,6 +16,6 @@
   },
   "scripts": {
     "test": "mocha ./test --recursive",
-    "sbam": "webpack --config test/html-js/webpack.conf.js"
+    "dist": "webpack --config webpack.conf.js"
   }
 }

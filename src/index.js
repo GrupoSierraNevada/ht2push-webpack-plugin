@@ -1,3 +1,10 @@
+function doSomethingAsync(){
+  return new Promise((resolve, reject)=>{
+    resolve();
+  });
+}
+
+
 class HelloAsyncPlugin {
     apply(compiler) {
       // tapAsync() is callback-based
