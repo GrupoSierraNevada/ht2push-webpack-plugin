@@ -5,7 +5,7 @@ module.exports = {
     entry: path.resolve(__dirname,"./index.js"),
     output:{
         path: path.resolve(__dirname, "./dist"), 
-        filename:"htmlpush-webpack-plugin.js",
+        filename:"ht2push-webpack-plugin.js",
     },
 
 }
