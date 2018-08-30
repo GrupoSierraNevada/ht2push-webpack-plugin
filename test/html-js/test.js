@@ -8,7 +8,7 @@ describe('basic html-js generate assets and .htaccess', function() {
     const fs = new MemoryFS();
     const compiler = Webpack(config);
     compiler.outputFileSystem = fs;
-    it('should produce out.js and out.html', function(done){
+    it('should produce exptected output files', function(done){
         compiler.run((err, stats)=>{
         
             expect(err).to.be.null;
@@ -20,4 +20,10 @@ describe('basic html-js generate assets and .htaccess', function() {
             done();
         });
     })
+
+    it("should have adequate basic .htaccess values", function(done){
+
+        expect(fs.readFileSync("/htaccess.txt", "utf-8")).to.equal("bleh");
+        done();
+    });
 });
