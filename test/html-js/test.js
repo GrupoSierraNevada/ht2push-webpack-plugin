@@ -12,9 +12,11 @@ describe('basic html-js generate assets and .htaccess', function() {
         compiler.run((err, stats)=>{
         
             expect(err).to.be.null;
-            expect(fs.readdirSync("/").length ).to.equal(2);
-            expect(fs.existsSync("/out.js"), "/out.js doesnt exist").to.be.true;
+            expect(fs.readdirSync("/").length ).to.equal(4);
+            expect(fs.existsSync("/main.js"), "/main.js doesnt exist").to.be.true;
             expect(fs.existsSync("/out.html", "/out.html doesnt exist")).to.be.true;
+            expect(fs.existsSync("/out2.html", "/out2.html doesnt exist")).to.be.true;
+            expect(fs.existsSync("/htaccess.txt", "htaccess didnt emit")).to.be.true;
             done();
         });
     })
