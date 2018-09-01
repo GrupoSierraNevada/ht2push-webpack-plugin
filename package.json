@@ -1,12 +1,14 @@
 {
-  "name": "ht2push-webpack-plugin",
+  "name": "resource-flow-webpack-plugin",
   "version": "1.0.0",
-  "description": "Generate .htaccess file for static html-webpack-plugin based compilations",
+  "description": "Generate resource hints based on html-webpack-plugin output-graph and site user flow graphs",
   "main": "index.js",
   "author": "Juan Borda <quiasmo.paprika@gmail.com>",
   "license": "MIT",
   "private": false,
-  "dependencies": {},
+  "dependencies": {
+    "dot": "^1.1.2"
+  },
   "devDependencies": {
     "css-loader": "^1.0.0",
     "html-webpack-plugin": "^3.2.0",

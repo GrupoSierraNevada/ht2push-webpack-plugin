@@ -1,6 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const Ht2PushPlugin = require(path.resolve(__dirname,"../../src/index.js"));
+const ResourceFlowWebpackPlugin = require(path.resolve(__dirname,"../../src/index.js"));
 
 module.exports = {
     mode:"production",
@@ -12,6 +12,6 @@ module.exports = {
     plugins:[
         new HtmlWebpackPlugin({filename: "out.html"}),
         new HtmlWebpackPlugin({filename: "out2.html"}),
-        new Ht2PushPlugin(),
+        new ResourceFlowWebpackPlugin(),
     ],
 }
